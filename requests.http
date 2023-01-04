@@ -1,0 +1,65 @@
+# примеры API-запросов
+
+@baseUrl = http://127.0.0.1:5000/
+
+
+# создание объявления
+POST {{baseUrl}}/bulboard/api/v1.0/publication
+Content-Type: application/json
+
+{
+    "title": "HELLO_33",
+    "description": "HELLO",
+    "person": "John"
+}
+
+###
+
+# создание объявления
+POST {{baseUrl}}/bulboard/api/v1.0/publication
+Content-Type: application/json
+
+{
+    "title": "HELLO1",
+    "description": "HELLO1",
+    "person": "John"
+}
+
+###
+
+# создание объявления
+POST {{baseUrl}}/bulboard/api/v1.0/publication
+Content-Type: application/json
+
+{
+    "title": "HELLO Pol",
+    "description": "HELLO Pol_33",
+    "person": "Pol"
+}
+
+###
+
+# получение объявлений
+GET {{baseUrl}}/bulboard/api/v1.0/publication
+Content-Type: application/json
+
+
+###
+
+# удаление объявления
+DELETE {{baseUrl}}/bulboard/api/v1.0/publication/1
+Content-Type: application/json
+
+###
+
+# изменение объявления
+PUT {{baseUrl}}/bulboard/api/v1.0/publication/3
+Content-Type: application/json
+
+{
+    "title": "HELLO1_22",
+    "description": "HELLO1_22",
+    "person": "Johny"
+}
+
+###
